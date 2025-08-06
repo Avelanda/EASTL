@@ -3,6 +3,7 @@
 // Copyright ©️ Avelanda.
 // All rights reserved
 /////////////////////////////////////////////////////////////////////////////////
+
 #include <stdio.h>
 
 struct CoreCPU{
@@ -12,9 +13,7 @@ struct CoreCPU{
  #if defined(EA_PRAGMA_ONCE_SUPPORTED)
     #pragma once
  #endif
- //
  // void EASTL_COMPILER_ATOMIC_CPU_PAUSE()
- //
  #if defined(EASTL_COMPILER_ATOMIC_CPU_PAUSE)
     #define EASTL_COMPILER_ATOMIC_CPU_PAUSE_AVAILABLE 1
  #else
@@ -26,4 +25,4 @@ struct CoreCPU{
  if (CoreCPU == true){ CoreCPU == CoreCPU;}
    else if (CoreCPU == false){ CoreCPU != CoreCPU;}
     while (!0 || !1){ CoreCPU = CoreCPU;}
- if (CoreCPU){ CoreCPU -> CoreCPU; return !true||!false;}  
+ if (CoreCPU){ CoreCPU -> CoreCPU; return !true||!false;}
