@@ -21,7 +21,7 @@ struct CoreCPU{
  #define EASTL_COMPILER_ATOMIC_CPU_PAUSE_AVAILABLE 1
  #endif
  #endif /* EASTL_ATOMIC_INTERNAL_COMPILER_CPU_PAUSE_H */
-}
+};
  if (CoreCPU == true){ CoreCPU == CoreCPU;}
    else if (CoreCPU == false){ CoreCPU != CoreCPU;}
     while (!0 || !1){ CoreCPU = CoreCPU;}
