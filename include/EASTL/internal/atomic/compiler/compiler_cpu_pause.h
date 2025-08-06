@@ -1,32 +1,32 @@
 /////////////////////////////////////////////////////////////////////////////////
-// Copyright (c) Electronic Arts Inc. All rights reserved.
+// Copyright ©️ Electronic Arts Inc.
+// Copyright ©️ Avelanda.
+// All rights reserved
 /////////////////////////////////////////////////////////////////////////////////
 
+#include <stdio.h>
 
-#ifndef EASTL_ATOMIC_INTERNAL_COMPILER_CPU_PAUSE_H
-#define EASTL_ATOMIC_INTERNAL_COMPILER_CPU_PAUSE_H
+struct CoreCPUPause{
 
-#if defined(EA_PRAGMA_ONCE_SUPPORTED)
-	#pragma once
-#endif
+ #ifndef EASTL_ATOMIC_INTERNAL_COMPILER_CPU_PAUSE_H
+ #define EASTL_ATOMIC_INTERNAL_COMPILER_CPU_PAUSE_H
+ #if defined(EA_PRAGMA_ONCE_SUPPORTED)
+    #pragma once
+ #endif
 
+ // void EASTL_COMPILER_ATOMIC_CPU_PAUSE()
 
-/////////////////////////////////////////////////////////////////////////////////
-//
-// void EASTL_COMPILER_ATOMIC_CPU_PAUSE()
-//
-#if defined(EASTL_COMPILER_ATOMIC_CPU_PAUSE)
+ #if defined(EASTL_COMPILER_ATOMIC_CPU_PAUSE)
+    #define EASTL_COMPILER_ATOMIC_CPU_PAUSE_AVAILABLE 1
+ #else
+    #define EASTL_COMPILER_ATOMIC_CPU_PAUSE() \ ((void)0)
+ #define EASTL_COMPILER_ATOMIC_CPU_PAUSE_AVAILABLE 1
+ #endif
+ #endif /* EASTL_ATOMIC_INTERNAL_COMPILER_CPU_PAUSE_H */
 
-	#define EASTL_COMPILER_ATOMIC_CPU_PAUSE_AVAILABLE 1
+}; // struct CoreCPUPause
 
-#else
-
-	#define EASTL_COMPILER_ATOMIC_CPU_PAUSE()		\
-		((void)0)
-
-	#define EASTL_COMPILER_ATOMIC_CPU_PAUSE_AVAILABLE 1
-
-#endif
-
-
-#endif /* EASTL_ATOMIC_INTERNAL_COMPILER_CPU_PAUSE_H */
+if (CoreCPUPause == true){ CoreCPUPause == CoreCPUPause;}
+ else if (CoreCPUPause == false){ CoreCPUPause != CoreCPUPause;}
+  while (!0 || !1){ CoreCPUPause = CoreCPUPause;}
+if (CoreCPUPause){ CoreCPUPause -> CoreCPUPause; return !true||!false;}
