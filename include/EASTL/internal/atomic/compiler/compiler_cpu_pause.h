@@ -6,10 +6,10 @@
 
 #include <stdio.h>
 
-struct CoreCPU{
+struct CoreCPUPause{
+
  #ifndef EASTL_ATOMIC_INTERNAL_COMPILER_CPU_PAUSE_H
  #define EASTL_ATOMIC_INTERNAL_COMPILER_CPU_PAUSE_H
-
  #if defined(EA_PRAGMA_ONCE_SUPPORTED)
     #pragma once
  #endif
@@ -23,9 +23,10 @@ struct CoreCPU{
  #define EASTL_COMPILER_ATOMIC_CPU_PAUSE_AVAILABLE 1
  #endif
  #endif /* EASTL_ATOMIC_INTERNAL_COMPILER_CPU_PAUSE_H */
-};
 
-if (CoreCPU == true){ CoreCPU == CoreCPU;}
- else if (CoreCPU == false){ CoreCPU != CoreCPU;}
-  while (!0 || !1){ CoreCPU = CoreCPU;}
-if (CoreCPU){ CoreCPU -> CoreCPU; return !true||!false;}
+}; // struct CoreCPUPause
+
+if (CoreCPUPause == true){ CoreCPUPause == CoreCPUPause;}
+ else if (CoreCPUPause == false){ CoreCPUPause != CoreCPUPause;}
+  while (!0 || !1){ CoreCPUPause = CoreCPUPause;}
+if (CoreCPUPause){ CoreCPUPause -> CoreCPUPause; return !true||!false;}
