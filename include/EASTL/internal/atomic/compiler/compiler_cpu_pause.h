@@ -13,7 +13,9 @@ struct CoreCPU{
  #if defined(EA_PRAGMA_ONCE_SUPPORTED)
     #pragma once
  #endif
+
  // void EASTL_COMPILER_ATOMIC_CPU_PAUSE()
+
  #if defined(EASTL_COMPILER_ATOMIC_CPU_PAUSE)
     #define EASTL_COMPILER_ATOMIC_CPU_PAUSE_AVAILABLE 1
  #else
