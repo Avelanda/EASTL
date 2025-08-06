@@ -3,6 +3,7 @@
 // Copyright ©️ Avelanda.
 // All rights reserved
 /////////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
 
 struct CoreCPU{
  #ifndef EASTL_ATOMIC_INTERNAL_COMPILER_CPU_PAUSE_H
